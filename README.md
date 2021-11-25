@@ -17,7 +17,7 @@ We assume that the MuJoCo files are extracted to the default location (`~/.mujoc
 
 ### Install 
 We recommend to use an anaconda environment.
-In our experiment we used ```python 3.7``` and the following dependencies
+In our experiments we used ```python 3.7``` and the following dependencies
 ```
 pip install gym==0.17.2 mujoco-py==1.50.1.68 numpy==1.19.1 torch==1.6.0 torchvision==0.7.0
 
@@ -36,9 +36,10 @@ python main.py --env "HalfCheetah-v3" --max_timesteps 1000000 --num_critic_updat
 An example script that runs the experiments for 10 seeds and all environments is in
 ```run_experiment.sh``` and ```run_experiment_data_efficient.sh```.
 
-You can speed up the experiments by using fewer networks to in the ensemble of TQC.
+You can speed up the experiments by using fewer networks in the ensemble of TQC.
 This trades off a little bit of performance for a faster runtime (see the Appendix of the paper).
-The number of networks can be controlled with ```--n_nets```. For example
+The number of networks can be controlled with the flag
+```--n_nets```. For example
 ```
 python main.py --env "HalfCheetah-v3" --max_timesteps 5000000 --n_nets 2--seed 0
 ```

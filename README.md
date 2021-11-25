@@ -1,10 +1,11 @@
 # Adaptively Calibrated Critic Estimates for Deep Reinforcement Learning
 <img src="https://user-images.githubusercontent.com/21196568/143023503-70cdf47a-d039-4c20-9e3c-efa23d3f0383.png">
-Official implementation of ACC, described in the paper ["Adaptively Calibrated Critic Estimates for Deep Reinforcement Learning"](https://arxiv.org/abs/2111.12673).
+
+Official implementation of ACC, described in the paper
+["Adaptively Calibrated Critic Estimates for Deep Reinforcement Learning"](https://arxiv.org/abs/2111.12673).
 The source code is based on the pytorch implementation of [TQC](https://github.com/SamsungLabs/tqc_pytorch),
 which again is based on [TD3](https://github.com/sfujim/TD3). 
 We thank the authors for making their source code publicly available.
-
 
 ## Requirements
 ### Install MuJoCo
